@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Usuario } from './clases/usuario';
+import {Router} from '@angular/router';
+// import * as internal from 'stream';
 
 @Component({
   selector: 'app-root',
@@ -7,13 +8,9 @@ import { Usuario } from './clases/usuario';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'test-app';
-  unUsuario: Usuario;
-  
-  constructor() {
-    this.unUsuario= new Usuario();
+    
+  constructor(private router: Router) { 
+    this.router.navigate(['/login']);
   }
-  saludar(){
-    console.log('Hola mundo');
-  }
+
 }

@@ -1,10 +1,12 @@
 export class Usuario {
     nombre:string;
+    clave:string;
 
     /**
      *
      */
     constructor() {
-        this.nombre = "mfs";
+        this.nombre = '';
+        this.clave = '';
     }
 }

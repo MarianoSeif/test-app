@@ -1,0 +1,26 @@
+.login-box{
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(58, 68, 95);
+    margin-top: 20px;
+}
+
+.form-label{
+    color: white;
+}
+
+.div-title {
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.div-mensaje {
+    color: red;
+    text-align: center;
+}

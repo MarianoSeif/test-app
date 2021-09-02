@@ -1,18 +1,1 @@
-<h1>Angular Test App</h1>
-
-<div class="container">
-    <input type="text" [(ngModel)]="title"> <!-- Doble Bindeo -->
-</div>
-
-<p>{{ title }}</p> <!-- Binding una sola via -->
-
-<p>{{ unUsuario.nombre }}</p>
-
-<div class="container">
-    <input type="button" value="saludar" (click)=saludar()> <!-- Otro tipo de Bindeo -->
-</div>
-
-<div class="container">
-    <input type="text" [(ngModel)]="unUsuario.nombre"> <!-- Doble Bindeo -->
-</div>
-
+<router-outlet></router-outlet>

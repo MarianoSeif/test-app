@@ -1,0 +1,29 @@
+<app-header></app-header>
+<div class="container">
+    <h1>Angular Ejercicio 1</h1>
+
+    <div class="mb-3">
+        <label class="form-label" for="edad1">Edad 1: </label>
+        <input class="form-control" id="edad1" type="number" [(ngModel)]="operacion.edad1">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="edad2">Edad 2: </label>
+        <input class="form-control" type="number" [(ngModel)]="operacion.edad2">
+    </div>
+
+    <div class="mb-3 center">
+        <button class="btn" (click)=operacion.Calcular()>Calcular</button>
+        <button class="btn" (click)=Limpiar()>Limpiar Form</button>
+    </div>
+    <hr>
+    <div class="mb-3">
+        <label class="form-label" for="suma">Suma: </label>
+        <input class="form-control" id="suma" type="number" [(ngModel)]="operacion.suma">
+    </div>
+    <div class="mb-3">
+        <label clss="form-label" for="promedio">Promedio: </label>
+        <input class="form-control" id="pomedio" type="number" [(ngModel)]="operacion.promedio">
+    </div>
+</div>
+
+
