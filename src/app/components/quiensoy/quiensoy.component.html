@@ -1,4 +1,11 @@
 <app-header></app-header>
 <div class="container">
-    <p>quiensoy works!</p>
+    <div class="card center">
+        <img class="card-img-top" src="{{avatarUrl}}">
+        <div class="card-body">
+          <h5 class="card-title">Nombre: {{ userName }}</h5>
+          <p class="card-text">id: {{ id }} <br> repos: {{ repos }}</p>
+          <a [routerLink]="['/home']" class="btn btn-primary">Home</a>
+        </div>
+    </div>
 </div>
