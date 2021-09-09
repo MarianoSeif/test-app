@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-t1',
@@ -10,9 +11,17 @@ export class LoginT1Component implements OnInit {
   pass: string = '';
   message: string = '';
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  siguiente(){
+    console.log('siguiente');
+    var modelo = this;
+    setTimeout(function(){
+      modelo.router.navigate(['casa']);
+    }, 2000);
   }
 
   onClick(){

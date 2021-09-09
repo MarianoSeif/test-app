@@ -2,11 +2,29 @@
 <div class="main-container">
     <div class="home-jumbotron">
         <div class="h-100 p-5 bg-light border rounded-3">
-            <h2>Welcome Home!</h2>
+            <h2>Welcome Home {{ usuarioActual.nombre }}!</h2>
             <p>Este es un primer intento de app con Angunlar. </p>
             <hr class="my-4">
             <p>Proximamente se convertirá el TP Sala de Juegos</p>
             <button class="btn btn-outline-secondary" type="button">Example button</button>
         </div>
     </div>
+    <div class="home-jumbotron">
+        <div class="h-100 p-5 bg-light border rounded-3">
+            <h2>Juegos</h2>
+            <p>Aqui se encontrarán los accesos a los Juegos y listados</p>
+            <hr class="my-4">
+            <p>En la esquina superior derecha encontrarás tu informacion y el boton de logout</p>
+            <button class="btn btn-outline-secondary" type="button">Example button</button>
+        </div>
+    </div>
+    <!--
+    <div>
+        <ul>
+            <li *ngFor="let usuario of usuarios | async">
+               {{ usuario | json }}
+            </li>
+          </ul>
+    </div>
+    -->
 </div>

@@ -2,9 +2,11 @@
     padding: 30px;
     text-align: center;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .home-jumbotron {
     width: 50%;
+    margin-bottom: 20px;
 }

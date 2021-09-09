@@ -1,21 +1,3 @@
-<!--
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Sala de Juegos</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" [routerLink]="['home']">Home</a>
-                <a class="nav-link" routerLinkActive="active" [routerLink]="['login']">Login</a>
-                <a class="nav-link" routerLinkActive="active" [routerLink]="['ejercicios']">Ejercicios</a>
-                <a class="nav-link" routerLinkActive="active" [routerLink]="['quiensoy']">Quien soy</a>
-            </div>
-        </div>
-    </div>
-</nav>
--->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" routerLinkActive="active" [routerLink]="['/home']">Home</a>
@@ -33,7 +15,18 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLinkActive="active" [routerLink]="['/login']">Login</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/casa']">Template</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/login2']">Login2</a>
+                </li>
             </ul>
+        </div>
+        <div class="user-info" *ngIf="this.usuarioService.usuario">
+            <i class="bi bi-twitch"></i>
+            <div>{{ this.usuarioService.usuario.nombre }}</div>            
+            <button class="btn btn-small" (click)="onClickLogout()">Logout</button>
         </div>
     </div>
 </nav>

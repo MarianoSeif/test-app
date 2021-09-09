@@ -1,12 +1,12 @@
 export class Usuario {
-    nombre:string;
-    clave:string;
+    id: string = '';
+    nombre:string = '';
+    apellido: string = '';
+    
+    usuario: string = '';
+    clave:string = '';
+    
+    token: string = '';
 
-    /**
-     *
-     */
-    constructor() {
-        this.nombre = '';
-        this.clave = '';
-    }
+    constructor() { }
 }

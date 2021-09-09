@@ -1,11 +1,11 @@
 <app-header></app-header>
 <div class="container">
-    <div class="card center">
+    <div class="card">
         <img class="card-img-top" src="{{avatarUrl}}">
         <div class="card-body">
-          <h5 class="card-title">Nombre: {{ userName }}</h5>
-          <p class="card-text">id: {{ id }} <br> repos: {{ repos }}</p>
-          <a [routerLink]="['/home']" class="btn btn-primary">Home</a>
+        <h5 class="card-title">Nombre: {{ userName }}</h5>
+        <p class="card-text">id: {{ id }} <br> repos: {{ repos }}</p>
+        <a [routerLink]="['/home']" class="btn btn-primary">Home</a>
         </div>
     </div>
 </div>

@@ -4,15 +4,24 @@
     </div>
     <div class="login-box">
         <div class="mb-3">
-            <label for="input_user_name" class="form-label">Usuario </label>
+            <label for="input_user_name" class="form-label">Usuario</label>
             <input type="text" class="form-control" name="input_user_name" id="input_user_name" [(ngModel)]="userName">
         </div>
         <div class="mb-3">
-            <label for="input_password" class="form-label">Contraseña </label>
+            <label for="input_password" class="form-label">Contraseña</label>
             <input type="password" class="form-control" name="input_password" id="input_password" [(ngModel)]="pass">
         </div>
         <div class="mb-3 button-container">
+            <button class="btn" (click)="onClickCompletarDatosAdmin()">Completar Datos Admin</button>
+        </div>
+        <div class="mb-3 button-container">
+            <button class="btn" (click)="onClickCompletarDatosMfs()">Completar Datos usuario</button>
+        </div>
+        <div class="mb-3 button-container">
             <button class="btn" (click)="onClick()">Ingresar</button>
+        </div>
+        <div class="mb-3 button-container">
+            <button class="btn" (click)="onClickRegistrar()">Registrar</button>
         </div>
         <div class="div-mensaje">
             <label>{{ mensaje }}</label>
